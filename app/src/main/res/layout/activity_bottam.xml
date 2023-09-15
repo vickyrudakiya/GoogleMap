@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottamActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/contener"
+            tools:ignore="Suspicious0dp"
+            android:orientation="horizontal">
+
+
+
+
+        </FrameLayout>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottam_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemRippleColor="@color/oriange"
+            app:itemTextColor="@color/oriange"
+            app:menu="@menu/bottam_navigation_item_view">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
