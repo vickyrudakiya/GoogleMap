@@ -3,19 +3,19 @@ package com.example.googlemap.Adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.googlemap.HomeFragment
+import com.example.googlemap.Fragment.HomeFragment
 import com.example.googlemap.ModelClass.ProfileModelClass
 import com.example.googlemap.R
 
-class HomeAdapter(var Context: HomeFragment, var list:ArrayList<ProfileModelClass>) : RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class HomeAdapter(var context: HomeFragment, var list:ArrayList<ProfileModelClass>) : RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var place: EditText = itemView.findViewById(R.id.place_txt)
-        var img: ImageView = itemView.findViewById(R.id.img_home_item)
+        var txtPlace: TextView = itemView.findViewById(R.id.txtPlace)
+        var img: ImageView = itemView.findViewById(R.id.img)
 
     }
 
@@ -31,7 +31,11 @@ class HomeAdapter(var Context: HomeFragment, var list:ArrayList<ProfileModelClas
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        Glide.with(Context).load(list[position].ImageUri).into(holder.img);
+        holder.txtPlace.text = list[position].place
+
+        Glide.with(context).load(list[position].ImageUri).into(holder.img)
+
+
 
     }
 }

@@ -8,249 +8,342 @@
     tools:context=".Fragment.Hotelfragument">
 
 
-
-<androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="350dp"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="10dp"
-    app:cardCornerRadius="10dp">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="350dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="10dp">
 
-
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:cardCornerRadius="15dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:src="@drawable/google"/>
-
-
-
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_marginVertical="5dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Double room with 1 bed"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:src="@drawable/google"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/google"/>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10dp"
-                    android:text="12m"/>
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Double room with 1 bed"/>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:src="@drawable/google"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"/>
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10dp"
-                    android:text="12m"/>
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/google"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="12m"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/google"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="12m"/>
+
+                    </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal">
 
-                <ImageView
-                    android:src="@drawable/google"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"/>
+                        <ImageView
+                            android:src="@drawable/google"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
 
-                <TextView
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="12m"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/google"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="12m"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10dp"
-                    android:text="12m"/>
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:src="@drawable/google"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="12m"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:src="@drawable/google"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="12m"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:src="@drawable/google"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="12m"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:src="@drawable/google"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="12m"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_corner"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginVertical="5dp"
+                            android:text="Book Now"
+
+                            android:id="@+id/Intro1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:src="@drawable/google"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="10dp"
-                    android:text="12m"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
 
 
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+<!--Tour Booking-->
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
-        android:orientation="horizontal">
+        android:layout_marginHorizontal="16dp">
 
         <ImageView
-            android:src="@drawable/google"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/img_hil1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
-            android:text="12m"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:src="@drawable/google"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
+            android:layout_marginTop="10dp"
+            android:text="In-depth Cultural"
+            android:textColor="@color/oriange"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
-            android:text="12m"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:src="@drawable/google"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
+            android:text="Everest Base Camp Trek"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
-            android:text="12m"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:src="@drawable/google"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
+            android:textStyle="bold"
+            android:text="Price per day:9000" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
-            android:text="12m"/>
+            android:textStyle="bold"
+            android:text="Age Range    :15 to 99 year olds" />
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Operated in   :English" />
 
-
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end">
-
-        <androidx.appcompat.widget.AppCompatButton
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_corner"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginVertical="5dp"
-            android:text="Book Now"
+            android:layout_gravity="end">
 
-            android:id="@+id/Intro1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="5dp"
+                android:text="Book Now"
+                />
+        </LinearLayout>
+
+
     </LinearLayout>
+
+
 
 </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
 
 
-
-
-</androidx.cardview.widget.CardView>
 
 
 </FrameLayout>

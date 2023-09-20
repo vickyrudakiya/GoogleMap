@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.googlemap.Fragment.BookingFragment
+import com.example.googlemap.Fragment.HomeFragment
 import com.example.googlemap.Fragment.MapFragument
 import com.example.googlemap.Fragment.ProfileFragment
 import com.example.googlemap.Fragment.favouriteFragment

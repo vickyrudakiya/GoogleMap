@@ -19,11 +19,46 @@
             android:id="@+id/profile_user"/>
 
 
-        <EditText
-            android:layout_width="match_parent"
+       <Button
+           android:layout_marginTop="10dp"
+           android:layout_gravity="center_horizontal"
+           android:text="Admin Login"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/add_text_pfofile"/>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Mountain Data"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add_Text"
-            android:id="@+id/add_text_pfofile"/>
+            android:id="@+id/add_text_mountain"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Beach Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_text_beach"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Lake Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_text_lake"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Forest Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_text_forest"/>
 
 
     </LinearLayout>

@@ -7,86 +7,62 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.googlemap.Adapter.HomeAdapter
-import com.example.googlemap.ModelClass.ProfileModelClass
-import com.example.googlemap.databinding.ActivityProfileBinding
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
+import com.example.googlemap.ModelClass.BeachModelClass
+import com.example.googlemap.ModelClass.MountianModelClass
+import com.example.googlemap.databinding.ActivityBeachBinding
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import java.util.UUID
 
-
-
-
-class ProfileActivity : AppCompatActivity() {
-    lateinit var Binding : ActivityProfileBinding
-    var reference = FirebaseDatabase.getInstance().reference
+class BeachActivity : AppCompatActivity() {
+    lateinit var Binding : ActivityBeachBinding
     private val PICK_IMAGE_REQUEST = 100
     lateinit var uri: Uri
     lateinit var ImageUri: Uri
-
+    var reference = FirebaseDatabase.getInstance().reference
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Binding= ActivityProfileBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
+        Binding = ActivityBeachBinding.inflate(layoutInflater)
         setContentView(Binding.root)
 
         initview()
-
-
     }
 
     private fun initview() {
 
-        Binding.BtnSubmit.setOnClickListener {
-            var city = Binding.edtcity.text.toString()
-            var place = Binding.edtPlace.text.toString()
-            var email = Binding.edtEmail.text.toString()
-            var phone = Binding.edtphone.text.toString()
-            var description = Binding.edtDescription.text.toString()
-            var price = Binding.edtprice.text.toString()
-            var rating = Binding.edtRating.text.toString()
-            var day = Binding.edtDay.text.toString()
-            var key = reference.root.child("AdminTb").push().key ?:""
+        Binding.BtnSubmitBeach.setOnClickListener {
+            var place = Binding.edtBeachPlace.text.toString()
+            var price = Binding.edtBeachPrice.text.toString()
+            var day = Binding.edtBeachDay.text.toString()
+            var people = Binding.edtBeachPeople.text.toString()
+            var key = reference.root.child("BeachTb").push().key ?: ""
 
 //             var modelClass = ProfileModelClass(city,place,price,day,rating,email,phone,description,key,ImageUri)
-            var modelClass = ProfileModelClass(city,place,email,phone,description,price,rating,day,key,ImageUri)
+            var modelClass = BeachModelClass(place, price, day, people, key, ImageUri)
 
-            reference.root.child("AdminTb").child(key).setValue(modelClass).addOnCompleteListener {
+            reference.root.child("BeachTb").child(key).setValue(modelClass).addOnCompleteListener {
 
-                if(it.isSuccessful)
-                {
+                if (it.isSuccessful) {
                     Toast.makeText(this, "Data Added Successful", Toast.LENGTH_SHORT).show()
                 }
-            }.addOnCanceledListener { Log.e("TAG", "Error: "+ it ) }
+            }.addOnCanceledListener { Log.e("TAG", "Error: " + it) }
         }
 
+        Binding.ButtonAddImageBeach.setOnClickListener {
 
-//        var reference = FirebaseDatabase.getInstance().reference
-
-            Binding.ButtonAddImage.setOnClickListener {
-
-                val intent = Intent()
-                intent.type = "image/*"
-                intent.action = Intent.ACTION_GET_CONTENT
-                startActivityForResult(
-                    Intent.createChooser(
-                        intent,
-                        "Select Image from here..."
-                    ),
-                    PICK_IMAGE_REQUEST
-                )
-
-
-            }
+            val intent = Intent()
+            intent.type = "image/*"
+            intent.action = Intent.ACTION_GET_CONTENT
+            startActivityForResult(
+                Intent.createChooser(
+                    intent,
+                    "Select Image from here..."
+                ), PICK_IMAGE_REQUEST
+            )
         }
-
-
-
+    }
     private fun uploadImage() {
         if (uri != null) {
 
@@ -116,23 +92,21 @@ class ProfileActivity : AppCompatActivity() {
                         progressDialog.dismiss()
                         Toast
                             .makeText(
-                                this@ProfileActivity,
+                                this@BeachActivity,
                                 "Image Uploaded!!",
                                 Toast.LENGTH_SHORT
                             )
                             .show()
                     }
                     .addOnFailureListener { e -> // Error, Image not uploaded
-                        progressDialog.dismiss()
                         Toast
                             .makeText(
-                                this@ProfileActivity,
+                                this@BeachActivity,
                                 "Failed " + e.message,
                                 Toast.LENGTH_SHORT
                             )
                             .show()
                     }
-
             }
         }
     }
@@ -153,9 +127,6 @@ class ProfileActivity : AppCompatActivity() {
 
         }
     }
-
-
-
 
 
 }

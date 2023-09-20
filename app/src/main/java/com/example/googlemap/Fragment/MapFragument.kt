@@ -25,7 +25,7 @@ class MapFragument : Fragment(), OnMapReadyCallback {
 
     private lateinit var _binding: FragmentMapBinding
     lateinit var mMap: GoogleMap
-    lateinit var searchView: SearchView
+    lateinit var idSearchView: SearchView
     var addedMarker: Marker? = null
     val binding get() = _binding!!
 
@@ -56,7 +56,7 @@ class MapFragument : Fragment(), OnMapReadyCallback {
             childFragmentManager.findFragmentById(com.example.googlemap.R.id.map) as SupportMapFragment?
         _binding.idSearchView.setOnQueryTextListener(/* listener = */ object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                val location = searchView.query.toString()
+                val location = idSearchView.query.toString()
 
                 var addressList: List<Address>? = null
 

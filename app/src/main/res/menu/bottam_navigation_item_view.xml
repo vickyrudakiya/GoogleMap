@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/add_Explore"
-        android:title="Home"
-        android:icon="@drawable/google"/>
+        android:title="Explore"
+        android:icon="@drawable/home"/>
 
     <item
         android:id="@+id/add_Booking"
@@ -14,7 +14,7 @@
     <item
         android:id="@+id/add_Trips"
         android:title="Map"
-        android:icon="@drawable/google"/>
+        android:icon="@drawable/map"/>
 
     <item
         android:id="@+id/add_Favorites"
@@ -24,6 +24,6 @@
     <item
         android:id="@+id/add_Profile"
         android:title="Profile"
-        android:icon="@drawable/google"/>
+        android:icon="@drawable/profileuser"/>
 
 </menu>

@@ -25,8 +25,8 @@ class ProfileModelClass {
         rate: String,
         day: String,
         key: String,
-        ImageUri: Uri
-    ) {
+        ImageUri: Uri)
+    {
         this.city = City
         this.place = Place
         this.email = Email
@@ -37,5 +37,10 @@ class ProfileModelClass {
         this.day = day
         this.key = key
         this.ImageUri=ImageUri.toString()
+    }
+
+    constructor()
+    {
+
     }
 }
